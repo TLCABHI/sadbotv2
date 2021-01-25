@@ -33,7 +33,7 @@ const vcard = 'BEGIN:VCARD\n' // OM JANGAN DI UBAH OM
             + 'VERSION:3.0\n' // INI WEEM RAMLAN GANS
             + 'FN:RamlanGans\n' // UBAH INI
             + 'ORG:Owner BOT;\n' // UBAH INI
-            + 'TEL;type=CELL;type=VOICE;waid=6285559240360:+62 855-5924-0360\n' // UBAH INI
+            + 'TEL;type=CELL;type=VOICE;waid=919074329903:+91 9074329903\n' // UBAH INI
             + 'END:VCARD' // WEEM DIHAPUS GUE BERHENTI UPDATE SCRIPT
 prefix = '!'
 blocked = []
@@ -134,8 +134,8 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '🌀 Sedang di Prosess 🌀',
-				wait2: '[❗] WAIT GANS',
+				wait: '🌀 CURRENTLY IN PROCESS 🌀',
+				wait2: '[❗] WAIT GA',
 				wait3: '[❗] Sabar tod pasti kemren nih',
 				wait4: '[❗] Sabar dumlu yakan',
 				success: '✔️ Berhasil ✔️',
@@ -153,8 +153,8 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6285559240360@s.whatsapp.net"] // Ganti pake nomor lu
-			const ramlanNumber = ["6285559240360@s.whatsapp.net"] // JANGAN DI UBAH NGENTOD
+			const ownerNumber = ["919074329903@s.whatsapp.net"] // Ganti pake nomor lu
+			const ramlanNumber = ["919074329903@s.whatsapp.net"] // JANGAN DI UBAH NGENTOD
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
